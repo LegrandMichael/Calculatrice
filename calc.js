@@ -1,54 +1,52 @@
-var allButton = $(":button");
+var allButton = $(":button"); // selectionne tous les boutons
 
-
-
-function add(a, b) {
+function add(a, b) { // Fonction qui additionne deux arguments entre eux
 	return a+b;
 }
 
-function subtract(a, b) {
+function subtract(a, b) { // Fonction qui soustrait deux arguments entre eux
 	return a-b;
 }
 
-function multiply(a, b) {
+function multiply(a, b) { // Fonction qui multiplie deux arguments entre eux
 	return a*b;
 }
 
-function divide(a, b) {
+function divide(a, b) { // Fonction qui divise deux arguments entre eux
 	return a/b;
 }
 
 
 allButton.click(function(){
-	var value = $(this).html();
-	console.log(value);
-
-	var array = [];
+	var value = $(this).html(); // Prends la valeur du bouton sur lequel on clique
+	var calc = [];
 	var result;
+	var len = calc.length;
+
+	//for (var i = 0; i < len; i ++) {
+
+		// calc.push(value);
+		console.log(value);
+
+		/*if (value === "+") {
+			result = add();
+		}
+
+		if (value === "-") {
+			result = subtract();
+		}
 
 
-	
+		if (value === "*") {
+			result = multiply();
+		}
 
-/*	
+		if (value === "/") {
+			result = divide();
+		}
 
-	if (operator === "+") {
-		result = add();
-	}
-
-	if (operator === "-") {
-		result = subtract();
-	}
-
-
-	if (operator === "*") {
-		result = multiply();
-	}
-
-	if (operator === "/") {
-		result = divide();
-	}
-
-	$("#result").text(result); */
+		$("#result").text(result); */
+	//}
 });
 
 
